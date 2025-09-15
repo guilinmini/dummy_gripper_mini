@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: dummy2-gripperv2_description
+    relative_path: urdf/dummy2-gripperv2.xacro
+  srdf:
+    relative_path: config/dummy2-gripperv2.srdf
+  package_settings:
+    author_name: muzi
+    author_email: xin.li@switchpi.com
+    generated_timestamp: 1732934404
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
